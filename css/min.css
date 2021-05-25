@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Cairo', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #3e3e3e;
+    transition: .5s linear;
+    -webkit-transition: .5s linear;
+    -moz-transition: .5s linear;
+    -ms-transition: .5s linear;
+    -o-transition: .5s linear;
+    flex-direction: column;
+}
+
+body.active {
+    background-color: #f5f6fa;
+}
+
+.contener {
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    color: #f5f6fa;
+}
+
+.contener.active {
+    color: #a29bfe;
+}
+
+.contener h1 {
+    font-size: 50px;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+.contener span {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.darkMod {
+    width: 320px;
+    height: 160px;
+    background-color: #333;
+    border-radius: 160px;
+    -webkit-border-radius: 160px;
+    -moz-border-radius: 160px;
+    -ms-border-radius: 160px;
+    -o-border-radius: 160px;
+    position: relative;
+    cursor: pointer;
+}
+
+.darkMod.active {
+    background-color: #a29bfe;
+}
+
+.darkMod .Btn {
+    width: 160px;
+    height: 100%;
+    background-color: #222;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: .5s linear;
+    -webkit-transition: .5s linear;
+    -moz-transition: .5s linear;
+    -ms-transition: .5s linear;
+    -o-transition: .5s linear;
+}
+
+.darkMod .Btn.active {
+    left: 160px;
+    transition: .5s linear;
+    -webkit-transition: .5s linear;
+    -moz-transition: .5s linear;
+    -ms-transition: .5s linear;
+    -o-transition: .5s linear;
+    background-color: #6c5ce7;
+    box-shadow: none;
+}
